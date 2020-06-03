@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>ISM Mini Savings Group</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles/vendor.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+  </head>
+  <body ng-app="yapp">
+    
+    <!-- Add your site or application content here -->
+    <div class="">
+      <div ui-view ></div>
+    </div>
+
+   
+    <script src="scripts/vendor.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="scripts/notify.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/dashboard.js"></script>
+    <script>
+      // Initialize Firebase
+       var firebaseConfig = {
+          apiKey: "AIzaSyDLjMl_2YyOLbq3RggMNmLa0ZStv5qWxk8",
+          authDomain: "ismfmini.firebaseapp.com",
+          databaseURL: "https://ismfmini.firebaseio.com",
+          projectId: "ismfmini",
+          storageBucket: "ismfmini.appspot.com",
+          messagingSenderId: "682531613523",
+          appId: "1:682531613523:web:44336f95c051aa27724fa6",
+          measurementId: "G-75ESBH41GQ"
+        };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
