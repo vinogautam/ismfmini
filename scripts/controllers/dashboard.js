@@ -195,7 +195,7 @@ angular.module('yapp')
           $.notify("Payment Submitted, waiting for approval", "info");
         }
         
-        $scope.expense = {amount: 500};
+        $scope.expense = {amount: 1000};
         
         $state.go('statement');
         
