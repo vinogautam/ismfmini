@@ -217,7 +217,9 @@ angular.module('yapp')
     
     $scope.newloadRequest = function(){
       $scope.loanrequest.ts = new Date().getTime();
-      $scope.loanrequest.req_by = angular.copy($scope.user.id);
+      if(!$scope.user.isAdmin){
+        $scope.loanrequest.req_by = angular.copy($scope.user.id);
+      }
       $scope.loanrequest.approved = [];
       $scope.loanrequest.loan_status = 0;
       firebase.database().ref('loanrequest').push($scope.loanrequest);
